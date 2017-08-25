@@ -1,0 +1,94 @@
+ext {
+
+    //Android
+    androidCompileSdkVersion = 25
+    androidBuildToolsVersion = "25.0.2"
+    androidMinSdkVersion = 15
+    androidTargetSdkVersion = 25
+
+    //Testing
+    junit = '4.12'
+
+    //Libraries
+    supportVersion = '26.0.0-alpha1'
+    butterknifeVersion = '8.4.0'
+    gsonVersion = '2.8.0'
+    frescoVersion = '1.1.0'
+    rxjavaVersion = '1.1.0'
+    rxandroidVersion = '1.1.0'
+    rxbindingVersion = '0.4.0'
+    retrofitVersion = '2.1.0'
+    converterGsonVersion = "2.1.0"
+    converterScalarsVersion = "2.1.0"
+    adapterRxjavaVersion = "2.1.0"
+    okhttpVersion = '3.4.1'
+    okhttpLoggingInterceptorVersion = '3.4.1'
+    ultraVersion = '1.0.11'
+    easypermissionsVersion = '0.2.1'
+    swipeRevealLayoutVersion = '1.4.0'
+    photoViewVersion = '1.2.5'
+    percentVersion = '22.2.0'
+    materialCalendarviewVersion = '1.4.0'
+    sugarVersion = '1.5'
+    glideVersion = '3.7.0'
+    floatingactionbuttonVersion = '1.3.0'
+    circleImageViewVersion = '2.1.0'
+    transformations = '2.0.0'
+    activityTransition = '1.0.0'
+    multidex = '1.0.1'
+    bankcardformatLibrary = '1.0.2'
+    zxing_android_core = '3.3.0'
+    zxing_core = '3.3.0'
+    greendao = '3.2.0'
+
+    testDependencies = [
+            junit: "junit:junit:${junit}"
+    ]
+
+    supportLibraryDependencies = [
+            appcompatV7 : "com.android.support:appcompat-v7:${supportVersion}",
+            supportV4   : "com.android.support:support-v4:${supportVersion}",
+            cardview    : "com.android.support:cardview-v7:${supportVersion}",
+            design      : "com.android.support:design:${supportVersion}",
+            recyclerView: "com.android.support:recyclerview-v7:${supportVersion}"
+    ]
+
+    coreLibraryDependencies = [
+            butterknife             : "com.jakewharton:butterknife:${butterknifeVersion}",
+            butterknifeCompiler     : "com.jakewharton:butterknife-compiler:${butterknifeVersion}",
+            gson                    : "com.google.code.gson:gson:${gsonVersion}",
+            fresco                  : "com.facebook.fresco:fresco:${frescoVersion}",
+            rxjava                  : "io.reactivex:rxjava:${rxjavaVersion}",
+            rxandroid               : "io.reactivex:rxandroid:${rxandroidVersion}",
+            retrofit                : "com.squareup.retrofit2:retrofit:${retrofitVersion}",
+            retrofitConverterGson   : "com.squareup.retrofit2:converter-gson:${converterGsonVersion}",
+            retrofitConverterScalars: "com.squareup.retrofit2:converter-scalars:${converterScalarsVersion}",
+            retrofitAdapterRxjava   : "com.squareup.retrofit2:adapter-rxjava:${adapterRxjavaVersion}",
+            okhttp                  : "com.squareup.okhttp3:okhttp:${okhttpVersion}",
+            okhttpLoggingInterceptor: "com.squareup.okhttp3:logging-interceptor:${okhttpLoggingInterceptorVersion}",
+            rxbinding               : "com.jakewharton.rxbinding:rxbinding:${rxbindingVersion}",
+            ultra                   : "in.srain.cube:ultra-ptr:${ultraVersion}",
+            easypermissions         : "pub.devrel:easypermissions:${easypermissionsVersion}",
+            swipeRevealLayout       : "com.chauthai.swipereveallayout:swipe-reveal-layout:${swipeRevealLayoutVersion}",
+            photoView               : "com.commit451:PhotoView:${photoViewVersion}",
+            percent                 : "com.android.support:percent:${supportVersion}",
+            materialCalendarview    : "com.prolificinteractive:material-calendarview:${materialCalendarviewVersion}",
+            sugar                   : "com.github.satyan:sugar:${sugarVersion}",
+            floatingactionbutton    : "com.melnykov:floatingactionbutton:${floatingactionbuttonVersion}",
+            glide                   : "com.github.bumptech.glide:glide:${glideVersion}",
+            circleimageview         : "de.hdodenhof:circleimageview:${circleImageViewVersion}",
+            transformations         : "jp.wasabeef:glide-transformations:${transformations}",
+            activityTransition      : "com.kogitune:pre-lollipop-activity-transition:${activityTransition}",
+            multidex                : "com.android.support:multidex:${multidex}",
+            bankcardformatLibrary   : "com.yuyh.bankcardformat:library:${bankcardformatLibrary}",
+            zxing_android_core      : "com.google.zxing:android-core:${zxing_android_core}",
+            zxing_core              : "com.google.zxing:core:${zxing_core}",
+            greendao                : "org.greenrobot:greendao:${greendao}"
+    ]
+
+    euDependencies = [
+            supportV4      : "com.android.support:support-v4:${supportVersion}",
+            glide          : "com.github.bumptech.glide:glide:${glideVersion}",
+            circleImageView: "de.hdodenhof:circleimageview:${circleImageViewVersion}"
+    ]
+}

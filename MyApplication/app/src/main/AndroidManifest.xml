@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dingli.diandiaan" >
+    <!-- 必选 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 开机启动添加 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!--【必选】用以设置前台是否显示通知-->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- 可选 -->
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_ADDED" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_CHANGED" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_INSTALL" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_REPLACED" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />;
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <!-- 这个权限用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- 这个权限用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <!-- 用于读取手机当前的状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <!--允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/><!-- 写入通讯录权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS"/><!-- 读取通讯录权限 -->
+
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_xue"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/MyTheme"
+       android:name="com.dingli.diandiaan.common.DianApplication"
+        android:largeHeap="true"
+        android:hardwareAccelerated="false">
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="483be2cd04c4e00ac5d389ff8ce76b5f"/>
+        <activity android:name="com.dingli.diandiaan.SpaceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StartTheme"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.dingli.diandiaan.login.LoginActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".firstpage.FirstPageFragment" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".firstpage.WebViewActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name="com.dingli.diandiaan.MainActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name="com.dingli.diandiaan.MaintiAcvity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name="com.dingli.diandiaan.YiDaoTuActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name="com.dingli.diandiaan.login.AlterActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name="com.dingli.diandiaan.login.FindActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name="com.dingli.diandiaan.setting.BindPhoneActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name="com.dingli.diandiaan.setting.SettingActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name="com.dingli.diandiaan.Syllabus.CourseActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name="com.dingli.diandiaan.evaluation.EvaluationActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name="com.dingli.diandiaan.login.ModificationActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name="com.dingli.diandiaan.rollcall.sousuo.SouSuoActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name="com.dingli.diandiaan.rollcall.SuiNewCallRollActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name="com.dingli.diandiaan.evaluation.ChoceClassActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name="com.dingli.diandiaan.information.EntrtyActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name="com.dingli.diandiaan.information.RefuseActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name="com.dingli.diandiaan.information.QingJiaMessActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name="com.dingli.diandiaan.login.chuqinlv.CqlActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name="com.dingli.diandiaan.login.chuqinlv.studentCql.StudentCqlActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name="com.dingli.diandiaan.login.pingjiao.PingjiaoActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".setting.ForgetActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".information.FangDaActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".firstpage.callset.CallSetActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".setting.InstructionActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".setting.HelpActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".rule.RuleActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".rollcall.NewCallRollActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".rollcall.PiNewCallRollActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".schedule.SyllFragments" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".firstpage.WebViewsActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".rollcall.WuKeChenActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".information.WarningActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".login.FirstAlterActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".login.daochu.DaochuWebActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".firstpage.WebViewOneActivity"
+            android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".firstpage.WebViewTwoActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".firstpage.WebViewThreeActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".firstpage.WebViewFourActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".firstpage.WebViewFiveActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".instruc.InstructorActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".instruc.InstructorDetailActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".instruc.InsLocationActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".instruc.InsMoreLocationActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".login.daochu.DaochuWebsActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".contact.ContactStaffActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".contact.ContactClassActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".contact.ContactSearchActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".lostproperty.WebViewLostActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".lostproperty.ImgFileListActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".lostproperty.ImgsActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".schedule.SyFormActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".schedule.picture.ImgFileListFormActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".schedule.picture.ImgsFormActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".school.SchoolWebActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".school.SchoolWebsActivity" android:screenOrientation="portrait" android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".newProject.moudle.camera.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            />
+        <activity
+            android:name=".newProject.moudle.webview.WebViewResluteActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            />
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.dingli.diandiaan.myprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/img"/>
+        </provider>
+        <service android:name="com.amap.api.location.APSService"/>
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="57b17e03e0f55a0c3b003b95">
+        </meta-data>
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="732f40dbbec4fd7b3214693984370b90" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Umeng" >
+        </meta-data>
+        <!--<meta-data-->
+            <!--android:name="PGYER_APPID"-->
+            <!--android:value="67bec0920e0d5497cc52f8eb83e5cb36">-->
+        <!--</meta-data>-->
+    </application>
+
+</manifest>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dingli.diandiaan.Syllabus.ListItemCourseView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@mipmap/detail_course"/>
+        <TextView
+            android:id="@+id/classroomtvac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/wenzis"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="14sp"
+            android:layout_marginLeft="5dp"
+            />
+    <TextView
+        android:layout_marginLeft="14dp"
+            android:id="@+id/studentnumc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/kchuqs"
+            android:textSize="14sp"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ren"
+            android:layout_marginLeft="6dp"
+            android:textColor="@color/wenzis"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+</com.dingli.diandiaan.Syllabus.ListItemCourseView>

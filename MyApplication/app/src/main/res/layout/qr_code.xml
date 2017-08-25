@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <SurfaceView
+            android:id="@+id/preview_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center" />
+
+        <com.dingli.diandiaan.newProject.moudle.camera.zxing.ViewfinderView
+            android:id="@+id/viewfinder_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/transparent1" />
+
+        <ImageView
+            android:id="@+id/iv_qr_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp"
+            android:src="@mipmap/back_white_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="扫一扫"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/circle_cornerselect"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvSelectDialogTitleset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="55dp"
+        android:padding="10dp"
+        android:textColor="@color/wenzise"
+        android:gravity="center_horizontal"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/one_line" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnSelectDialogCancelset"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/hintdiaqu"
+            android:gravity="center"
+            android:text="@string/quxiao"
+            android:textColor="@color/xiangqin"
+            android:textSize="14sp"
+             />
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/one_line" />
+        <Button
+            android:id="@+id/btnSelectDialogDetermineset"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/hint_dialog_btn_selector"
+            android:gravity="center"
+            android:text="@string/goset"
+            android:textColor="@color/bg_White"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+</LinearLayout>

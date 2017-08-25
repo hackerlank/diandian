@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/qianblue">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/tvdaochu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:gravity="center"
+            android:text="@string/contact"
+            android:textSize="20sp"
+            android:textColor="@color/bg_White"/>
+        <ImageView
+            android:id="@+id/ivsearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/icon_contactsou"
+            android:padding="10dp"
+            />
+    </LinearLayout>
+    <com.dingli.diandiaan.view.VerticalSwipeRefreshLayout
+        android:id="@+id/refercontact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+          <com.dingli.diandiaan.view.XListView
+              android:id="@+id/listviewcontact"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:divider="@color/bg_White"
+              android:background="@color/bg_White"
+              />
+    </com.dingli.diandiaan.view.VerticalSwipeRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dingli.diandiaan.login.ListItemOutView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="5dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvoutmin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:textColor="@color/wenziyanse"
+            android:textSize="15sp"
+            android:singleLine="true"/>
+    <TextView
+            android:id="@+id/tvoutlu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:padding="5dp"
+            android:textColor="@color/cenlist"
+            android:textSize="15sp"
+        android:text="2"/>
+    </LinearLayout>
+</com.dingli.diandiaan.login.ListItemOutView>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 白色 -->
+    <color name="bg_White">#FFFFFF</color>
+    <color name="bg_Whites">#93e3d5</color>
+    <color name="centerclick">#f2f2f2</color>
+    <!-- 黑色 -->
+    <color name="bg_Black">#000000</color>
+    <!-- 灰色 -->
+    <color name="bg_Gray">#CCCCCC</color>
+
+    <!-- 浅灰色 -->
+    <color name="bg_Gray_light">#EEEEEE</color>
+    <color name="forget">#f1f1f1</color>
+    <color name="forgetf">#f5f5f5</color>
+    <color name="forgets">#f6f6f6</color>
+
+    <!-- 白色 -->
+    <color name="tv_White">#FFFFFF</color>
+    <color name="wenzis">#a3a3a3</color>
+    <color name="qiangzi">#1d1d26</color>
+    <!-- 黑色 -->
+    <color name="tv_Black">#000000</color>
+    <!-- 红色 -->
+    <color name="tv_Red">#CC0000</color>
+    <color name="calendar_threeday_color">#FA383A</color>
+    <!-- 灰色 -->
+    <color name="tv_Gray">#CCCCCC</color>
+    <color name="light">#FFEEEEEE</color>
+    <color name="dark">#FF222222</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="beijinans">#fdc006</color>
+    <color name="one_line">#bfbfbf</color>
+    <color name="one_liuyan">#999999</color>
+    <color name="duanwang">#FFF1C0</color>
+    <!-- 蓝色 -->
+    <color name="title_bar">#01befe</color>
+    <!-- 淡蓝色-->
+    <!--<color name="qianblue">#60a8f4</color>-->
+    <color name="qianblue">#29c192</color>
+    <color name="qianblued">#30bf80</color>
+    <color name="hint">#c7c6c6</color>
+    <color name="qianblues">#068957</color>
+    <color name="btn">#50d2c2</color>
+    <color name="beijinan">#b3b3b3</color>
+    <!-- 褐色 -->
+    <color name="popup_window_text">#4d0300</color>
+    <color name="text_with_to">#cdcdcd</color>
+    <!-- 浅黑-->
+    <color name="common_text">#404040</color>
+    <color name="beijing">#d0d0d0</color>
+    <color name="complete_setting">#595958</color>
+    <color name="dianmingtext">#257edc</color>
+    <color name="dianmingzhong">#ff7d76</color>
+    <color name="cenlist">#ff665f</color>
+    <color name="center">#f5f5f5</color>
+    <color name="kechengnan">#ff4622</color>
+    <!-- 黄色 -->
+    <color name="adressd">#FF8C00</color>
+    
+    <color name="transparent">#e0000000</color>
+    
+    <color name="button_checked">#ed3147</color>
+    <color name="button_un_checked">#8d8d8d</color>
+    <color name="button_cunbao">#2F4F4F</color>
+    <color name="button_zhifu">#b69978</color>
+    <!-- 蓝色 -->
+    <color name="blueziti">#20b2aa</color>
+    <color name="found">#ffff4b9b</color>
+    <color name="limai">#663300</color>
+    <color name="dianbg">#e6f2ff</color>
+    <color name="bgxian">#b9dbff</color>
+    <color name="wenziyanse">#666666</color>
+    <color name="wukeyase">#bbbbbb</color>
+    <!--<color name="pingjiafen">#f1f1f1</color>-->
+    <color name="callroll">#333333</color>
+    <color name="wenzixian">#d0d0d0</color>
+    <color name="wenzise">#333333</color>
+    <color name="xiangqin">#999999</color>
+    <color name="chidao">#FFCA45</color>
+    <color name="qingjiae">#4ED59B</color>
+    <color name="zaotui">#60A8F4</color>
+    <color name="onestar">#78c0f2</color>
+    <color name="twostar">#c573e2</color>
+    <color name="threestar">#feb41d</color>
+    <color name="fourstar">#ff553c</color>
+    <color name="wustar">#b3da29</color>
+    <color name="timebg">#ffeded</color>
+    <color name="timetv">#ff362d</color>
+    <color name="yidonezuo">#55dec9</color>
+    <color name="yidoneno">#9f91e4</color>
+    <color name="timeyanse">#b2b2b2</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="callset">#E5E5E5</color>
+    <color name="helpone">#fd6363</color>
+    <color name="yidao">#eb87c0</color>
+    <color name="daoh">#f5f5f5</color>
+    <color name="aa">#aaaaaa</color>
+    <color name="xuanzhong">#deeffc</color>
+    <color name="chabg">#55ddc9</color>
+    <color name="cc">#60a8f3</color>
+    <color name="secondlist">#f8f8f8</color>
+    <color name="secondlists">#f3f3f3</color>
+    <color name="yidaos">#ce87c0</color>
+    <color name="weitijiao">#b0b0b0</color>
+    <color name="weitijiaos">#fed615</color>
+    <color name="yitijiao">#55d47c</color>
+    <!-- A light Holo shade of blue -->
+    <color name="holo_blue_light">#ff33b5e5</color>
+    <!-- A light Holo shade of green -->
+    <color name="holo_green_light">#ff99cc00</color>
+    <!-- A light Holo shade of red -->
+    <color name="holo_red_light">#ffff4444</color>
+    <!-- A dark Holo shade of blue -->
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <!-- A dark Holo shade of green -->
+    <color name="holo_green_dark">#ff669900</color>
+    <!-- A dark Holo shade of red -->
+    <color name="holo_red_dark">#ffcc0000</color>
+    <!-- A Holo shade of purple -->
+    <color name="holo_purple">#ffaa66cc</color>
+    <!-- A light Holo shade of orange -->
+    <color name="holo_orange_light">#ffffbb33</color>
+    <!-- A dark Holo shade of orange -->
+    <color name="holo_orange_dark">#ffff8800</color>
+    <!-- A really bright Holo shade of blue -->
+    <color name="holo_blue_bright">#ff00ddff</color>
+    <color name="setxiu">#484848</color>
+    <color name="yiqiandao">#e5e5e5</color>
+    <color name="setxius">#1d1d27</color>
+    <color name="setalt">#c7c6c6</color>
+    <color name="setalts">#a7a7a7</color>
+    <color name="setlo">#2e3d49</color>
+    <color name="click">#00bb8c</color>
+    <color name="clicks">#c9d6d8</color>
+    <color name="weids">#f0f0f0</color>
+    <color name="weid">#f9f9f9</color>
+    <color name="weizi">#2f3d4a</color>
+    <color name="jujue">#fc615f</color>
+    <color name="timec">#fd6060</color>
+    <color name="lixiao">#2ebf8e</color>
+    <color name="lixiaos">#e0fef4</color>
+    <color name="hintdia">#00bc8c</color>
+    <color name="hintdiaqu">#efefef</color>
+    <color name="kchuq">#9d9d9f</color>
+    <color name="kchuqs">#089ef4</color>
+    <color name="kchuqd">#646464</color>
+    <color name="kebs">#FFB74E</color>
+    <color name="kebsd">#f5f4f9</color>
+    <color name="julis">#9d9d9e</color>
+    <color name="yidaob">#e0fde1</color>
+    <color name="chidaob">#fdf1e1</color>
+    <color name="zaotuib">#fde1e0</color>
+    <color name="qingjiab">#ebf5ff</color>
+    <color name="kukeb">#fae9cf</color>
+    <color name="kuketv">#d5b37a</color>
+    <color name="chidaotv">#f2a12f</color>
+    <color name="qingjiatv">#7bbdff</color>
+    <color name="zaotuitv">#fa7e7e</color>
+    <color name="newro">#49bdec</color>
+    <color name="liushu">#21bf8e</color>
+    <color name="bantouming">#e0000000</color>
+    <color name="firsttv">#686868</color>
+    <color name="shoutou">#eeeeee</color>
+    <color name="shoutous">#bcf2e4</color>
+    <color name="zise">#079dfb</color>
+    <color name="caos">#2d3e49</color>
+    <color name="records">#7c7c7c</color>
+    <color name="qingk">#6a6a6a</color>
+    <color name="qingkz">#5b657b</color>
+    <color name="sy">#39be95</color>
+    <color name="sys">#10bcf5</color>
+    <color name="sytv">#1c8e6b</color>
+    <color name="sycolor">#9B9FA2</color>
+    <color name="sybg">#F4F4F4</color>
+    <color name="wenzico">#eb0707</color>
+    <color name="fucolor">#34c396</color>
+    <color name="fucoloryi">#3e3a39</color>
+    <color name="instruc">#E0FEF4</color>
+
+    <!--二维码-->
+    <color name="white">#ffffff</color>
+    <color name="viewfinder_mask">#66000000</color>
+    <color name="viewfinder_laser">#aacc0000</color>
+    <color name="possible_result_points">#c0ffbd21</color>
+    <color name="black">#000000</color>
+    <color name="colorAccent">#03BFA0</color>
+    <color name="transparent1">#00000000</color>
+
+</resources>

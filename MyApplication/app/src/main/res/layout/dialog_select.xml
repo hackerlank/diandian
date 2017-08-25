@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/circle_cornerselect"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/quekai"
+        android:textSize="18sp"
+        android:textColor="@color/bg_Black"
+        android:gravity="center_horizontal"
+        />
+
+
+    <TextView
+        android:id="@+id/tvSelectDialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="55dp"
+        android:padding="10dp"
+        android:textColor="@color/callroll"
+        android:gravity="center_horizontal"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/one_line" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSelectDialogCancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/hint_dialog_btn_selector"
+            android:gravity="center"
+            android:text="@string/quxiao"
+            android:textColor="@color/xiangqin"
+            android:textSize="14sp"
+             />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/one_line" />
+
+        <Button
+            android:id="@+id/btnSelectDialogDetermine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/hint_dialog_btn_selector"
+            android:gravity="center"
+            android:text="@string/qued"
+            android:textColor="@color/qianblue"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

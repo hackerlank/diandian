@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/qianblue">
+        <ImageView
+            android:id="@+id/instructorback"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:src="@mipmap/backwhites"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="@string/fudao"
+            android:textColor="@color/bg_White"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            />
+    </LinearLayout>
+    <com.dingli.diandiaan.view.VerticalSwipeRefreshLayout
+        android:id="@+id/refinstruc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ListView
+        android:id="@+id/listinstructor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/bg_White"
+        android:listSelector="@drawable/page_list_selector"/>
+    </com.dingli.diandiaan.view.VerticalSwipeRefreshLayout>
+</LinearLayout>

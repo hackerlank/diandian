@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rlbgone"
+        android:layout_width="0dp"
+        android:layout_height="115dp"
+        android:layout_weight="1"
+        >
+       <com.dingli.diandiaan.login.CircleImageView
+           android:id="@+id/igvone"
+           android:layout_width="60dp"
+           android:layout_height="60dp"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="10dp"
+           />
+       <TextView
+           android:id="@+id/tvnameone"
+           android:layout_below="@id/igvone"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="15sp"
+           android:textColor="@color/callroll"
+           android:layout_centerHorizontal="true"
+           />
+     />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/wenzixian"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/wenzixian"
+       />
+</LinearLayout>
